@@ -15,7 +15,11 @@ export default function Home() {
 
             <div className="mt-6 flex justify-center lg:justify-start">
               <div className="luxury-logo" aria-label="Joker Barbershop">
-                <h1>Joker Barbershop</h1>
+                <h1>
+                  ♛ 𝕵𝖔𝖐𝖊𝖗 ♛
+                  <br />
+                  𝕭𝖆𝖗𝖇𝖊𝖗𝖘𝖍𝖔𝖕
+                </h1>
               </div>
             </div>
           </div>
