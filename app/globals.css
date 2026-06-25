@@ -29,33 +29,88 @@ body {
   position: relative;
   display: inline-flex;
   align-items: center;
-  gap: clamp(0.75rem, 2vw, 1.5rem);
-  color: #f4ddb0;
+  justify-content: center;
+  isolation: isolate;
+  padding: clamp(1rem, 2vw, 1.5rem) 0;
 }
 
 .luxury-logo::before,
 .luxury-logo::after {
   content: "";
+  position: absolute;
+  left: 50%;
   height: 1px;
-  width: clamp(2.5rem, 9vw, 7rem);
-  background: linear-gradient(90deg, transparent, #d6af5e, transparent);
+  width: min(28rem, 78vw);
+  transform: translateX(-50%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(214, 175, 94, 0.25),
+    #f4ddb0,
+    rgba(214, 175, 94, 0.25),
+    transparent
+  );
+  box-shadow: 0 0 18px rgba(214, 175, 94, 0.36);
+}
+
+.luxury-logo::before {
+  top: 0;
+}
+
+.luxury-logo::after {
+  bottom: 0;
 }
 
 .luxury-logo h1 {
-  max-width: 9ch;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(3.25rem, 9vw, 7.75rem);
+  position: relative;
+  max-width: 10ch;
+  background: linear-gradient(180deg, #fff4d6 0%, #d6af5e 52%, #8f6a24 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: "Cormorant Garamond", "Playfair Display", Cinzel, Georgia,
+    "Times New Roman", serif;
+  font-size: clamp(4rem, 10vw, 9.25rem);
   font-weight: 700;
   letter-spacing: 0;
-  line-height: 0.86;
+  line-height: 0.82;
   text-transform: uppercase;
-  text-shadow: 0 0 26px rgba(214, 175, 94, 0.24);
+  text-shadow: 0 0 34px rgba(214, 175, 94, 0.32);
 }
 
-.luxury-logo__ornament {
-  color: #d6af5e;
-  font-size: clamp(1rem, 2vw, 1.35rem);
-  text-shadow: 0 0 18px rgba(214, 175, 94, 0.45);
+.luxury-logo h1::before,
+.luxury-logo h1::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: clamp(0.75rem, 1.4vw, 1.2rem);
+  width: clamp(2.2rem, 5vw, 4.75rem);
+  border-top: 1px solid #d6af5e;
+  border-bottom: 1px solid rgba(214, 175, 94, 0.42);
+  opacity: 0.85;
+}
+
+.luxury-logo h1::before {
+  right: calc(100% + clamp(0.9rem, 2vw, 1.5rem));
+}
+
+.luxury-logo h1::after {
+  left: calc(100% + clamp(0.9rem, 2vw, 1.5rem));
+}
+
+.luxury-hero-image::before {
+  content: "";
+  position: absolute;
+  inset: -18%;
+  z-index: -1;
+  background: radial-gradient(
+    circle,
+    rgba(214, 175, 94, 0.34),
+    rgba(214, 175, 94, 0.08) 42%,
+    transparent 68%
+  );
+  filter: blur(8px);
+  animation: gold-pulse 4200ms ease-in-out infinite;
 }
 
 .animate-luxury-rise {
@@ -90,21 +145,35 @@ body {
   }
 }
 
-@media (max-width: 640px) {
-  .luxury-logo {
-    flex-direction: column;
-    gap: 0.65rem;
+@keyframes gold-pulse {
+  0%,
+  100% {
+    opacity: 0.62;
+    transform: scale(0.98);
   }
 
+  50% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+}
+
+@media (max-width: 640px) {
   .luxury-logo::before,
   .luxury-logo::after {
-    width: min(12rem, 58vw);
+    width: min(18rem, 76vw);
+  }
+
+  .luxury-logo h1::before,
+  .luxury-logo h1::after {
+    display: none;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .animate-luxury-rise,
-  .animate-luxury-reveal {
+  .animate-luxury-reveal,
+  .luxury-hero-image::before {
     animation: none;
   }
 }

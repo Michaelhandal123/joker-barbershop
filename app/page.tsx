@@ -3,29 +3,40 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen overflow-hidden bg-black text-white">
-      <section className="relative isolate flex min-h-[86vh] items-center px-6 py-16 text-center lg:text-left">
-        <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_top_left,rgba(214,175,94,0.18),transparent_34%),linear-gradient(135deg,#050505_0%,#0b0a08_48%,#14100a_100%)]" />
-        <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(0,0,0,0.92),rgba(0,0,0,0.58),rgba(0,0,0,0.92))]" />
+      <section className="relative isolate flex min-h-[88vh] items-center px-6 py-14 text-center lg:text-left">
+        <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_18%_22%,rgba(214,175,94,0.24),transparent_30%),radial-gradient(circle_at_86%_76%,rgba(214,175,94,0.12),transparent_34%),linear-gradient(135deg,#030303_0%,#0b0906_50%,#161009_100%)]" />
+        <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(0,0,0,0.78),rgba(0,0,0,0.42),rgba(0,0,0,0.86))]" />
 
-        <div className="mx-auto grid w-full max-w-6xl items-center gap-12 lg:grid-cols-[1fr_0.9fr]">
-          <div className="animate-luxury-rise">
+        <div className="mx-auto grid w-full max-w-7xl items-center gap-10 lg:grid-cols-[0.92fr_1fr] lg:gap-16">
+          <div className="animate-luxury-reveal order-1">
+            <div className="luxury-hero-image relative mx-auto aspect-[4/5] w-full max-w-[560px] overflow-hidden rounded-[2.25rem] border border-[#d6af5e]/50 bg-[#100d08] p-3 shadow-[0_34px_120px_rgba(0,0,0,0.72)]">
+              <div className="absolute inset-0 rounded-[2.25rem] bg-[linear-gradient(135deg,rgba(244,221,176,0.36),rgba(214,175,94,0.08)_42%,rgba(214,175,94,0.28))]" />
+              <div className="relative h-full overflow-hidden rounded-[1.7rem]">
+                <Image
+                  src="/images/joker-hero.jpg"
+                  alt="Joker Barbershop Logo"
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 92vw, (max-width: 1200px) 45vw, 560px"
+                  className="object-cover object-center contrast-110"
+                />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.02),rgba(0,0,0,0.18))]" />
+              </div>
+            </div>
+          </div>
+
+          <div className="animate-luxury-rise order-2">
             <p className="text-xs font-semibold uppercase tracking-[0.45em] text-[#d6af5e]">
               Premium Barber Experience
             </p>
 
-            <div className="mt-6 flex justify-center lg:justify-start">
-              <div className="luxury-logo">
-                <span className="luxury-logo__ornament" aria-hidden="true">
-                  ✦
-                </span>
+            <div className="mt-7 flex justify-center lg:justify-start">
+              <div className="luxury-logo" aria-label="Joker Barbershop">
                 <h1>Joker Barbershop</h1>
-                <span className="luxury-logo__ornament" aria-hidden="true">
-                  ✦
-                </span>
               </div>
             </div>
 
-            <p className="mx-auto mt-7 max-w-2xl text-base leading-8 text-zinc-300 sm:text-xl lg:mx-0">
+            <p className="mx-auto mt-8 max-w-2xl text-base leading-8 text-zinc-300 sm:text-xl lg:mx-0">
               Präzise Haarschnitte, saubere Fades und professionelle Bartpflege
               in moderner und freundlicher Atmosphäre.
             </p>
@@ -44,23 +55,6 @@ export default function Home() {
               >
                 Unsere Services
               </a>
-            </div>
-          </div>
-
-          <div className="animate-luxury-reveal">
-            <div className="relative mx-auto aspect-[4/5] w-full max-w-[430px] overflow-hidden rounded-[2rem] border border-[#d6af5e]/45 bg-[#100d08] p-3 shadow-[0_30px_100px_rgba(0,0,0,0.65)]">
-              <div className="absolute inset-0 rounded-[2rem] bg-[linear-gradient(135deg,rgba(214,175,94,0.36),transparent_34%,rgba(214,175,94,0.18))]" />
-              <div className="relative h-full overflow-hidden rounded-[1.5rem]">
-                <Image
-                  src="/images/joker-hero.jpg"
-                  alt="Joker Barbershop Logo"
-                  fill
-                  priority
-                  sizes="(max-width: 768px) 86vw, (max-width: 1200px) 40vw, 430px"
-                  className="object-cover object-center contrast-110"
-                />
-                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.04),rgba(0,0,0,0.26))]" />
-              </div>
             </div>
           </div>
         </div>
