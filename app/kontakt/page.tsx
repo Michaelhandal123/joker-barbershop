@@ -11,30 +11,29 @@ export default function Kontakt() {
           unsere Kontaktdaten und Öffnungszeiten.
         </p>
 
-        <div className="mt-14 grid gap-10 md:grid-cols-2">
-          {/* LEFT SIDE */}
-          <div className="space-y-8">
-            <section className="mt-16">
-              <div className="rounded-3xl border border-zinc-800 bg-zinc-950 p-4">
-                <h2 className="mb-4 text-2xl font-semibold text-white">
-                  Unser Standort
-                </h2>
+        <div className="mt-14 grid gap-8 lg:grid-cols-2">
+          <section className="lg:col-span-2">
+            <div className="rounded-3xl border border-zinc-800 bg-zinc-950 p-4">
+              <h2 className="mb-4 text-2xl font-semibold text-white">
+                Unser Standort
+              </h2>
 
-                <div className="overflow-hidden rounded-2xl">
-                  <iframe
-                    src="https://www.google.com/maps?q=Joker%20Barber%20Shop%20Rennbahnring%209%2006124%20Halle&output=embed"
-                    width="100%"
-                    height="400"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="♛ 𝒥𝑜𝓀𝑒𝓇 ♛ 𝐵𝒶𝓇𝒷𝑒𝓇𝓈𝒽𝑜𝓅 Standort"
-                  />
-                </div>
+              <div className="overflow-hidden rounded-2xl">
+                <iframe
+                  src="https://www.google.com/maps?q=Joker%20Barber%20Shop%20Rennbahnring%209%2006124%20Halle&output=embed"
+                  width="100%"
+                  height="400"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="♛ 𝒥𝑜𝓀𝑒𝓇 ♛ 𝐵𝒶𝓇𝒷𝑒𝓇𝓈𝒽𝑜𝓅 Standort"
+                />
               </div>
-            </section>
+            </div>
+          </section>
 
+          <div className="space-y-8">
             <div className="rounded-3xl border border-zinc-800 bg-zinc-950 p-6">
               <h2 className="text-2xl font-semibold">Kontaktdaten</h2>
 
@@ -83,7 +82,9 @@ export default function Kontakt() {
                 <span className="font-semibold">@joker_m7_barbershop</span>
               </a>
             </div>
+          </div>
 
+          <div className="space-y-8">
             <div className="rounded-3xl border border-zinc-800 bg-zinc-950 p-6">
               <h2 className="text-2xl font-semibold">Öffnungszeiten</h2>
 
@@ -122,66 +123,6 @@ export default function Kontakt() {
                 </a>
               </div>
             </div>
-          </div>
-
-          {/* RIGHT SIDE FORM */}
-          <div className="rounded-3xl border border-zinc-800 bg-zinc-950 p-6">
-            <h2 className="text-2xl font-semibold">Nachricht senden</h2>
-
-            <form className="mt-6 space-y-5">
-              <div>
-                <label className="mb-2 block text-sm font-medium">Name</label>
-
-                <input
-                  type="text"
-                  placeholder="Dein Name"
-                  className="w-full rounded-2xl border border-zinc-700 bg-black px-4 py-3 text-white outline-none"
-                />
-              </div>
-
-              <div>
-                <label className="mb-2 block text-sm font-medium">
-                  E-Mail
-                </label>
-
-                <input
-                  type="email"
-                  placeholder="deine@email.de"
-                  className="w-full rounded-2xl border border-zinc-700 bg-black px-4 py-3 text-white outline-none"
-                />
-              </div>
-
-              <div>
-                <label className="mb-2 block text-sm font-medium">
-                  Telefonnummer
-                </label>
-
-                <input
-                  type="tel"
-                  placeholder="+49..."
-                  className="w-full rounded-2xl border border-zinc-700 bg-black px-4 py-3 text-white outline-none"
-                />
-              </div>
-
-              <div>
-                <label className="mb-2 block text-sm font-medium">
-                  Nachricht
-                </label>
-
-                <textarea
-                  rows={5}
-                  placeholder="Schreibe uns deine Nachricht..."
-                  className="w-full rounded-2xl border border-zinc-700 bg-black px-4 py-3 text-white outline-none"
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="w-full rounded-2xl bg-white px-6 py-3 font-semibold text-black transition hover:scale-[1.01]"
-              >
-                Nachricht senden
-              </button>
-            </form>
           </div>
         </div>
       </div>
