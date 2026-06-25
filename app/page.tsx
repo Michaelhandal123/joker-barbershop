@@ -11,16 +11,16 @@ export default function Home() {
         </h1>
 
         <p className="mt-6 max-w-3xl text-lg text-zinc-300 sm:text-2xl">
-          Präzise Haarschnitte, saubere Fades und professionelle Bartpflege
-          in moderner und freundlicher Atmosphäre.
+          Präzise Haarschnitte, saubere Fades und professionelle Bartpflege in
+          moderner und freundlicher Atmosphäre.
         </p>
 
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <a
-            href="/termin-buchen"
+            href="/kontakt"
             className="rounded-xl bg-white px-6 py-3 font-semibold text-black"
           >
-            Termin buchen
+            Kontakt
           </a>
 
           <a
@@ -64,65 +64,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-<section className="bg-black px-6 py-16 text-white">
-  <div className="mx-auto max-w-6xl">
-    <h2 className="text-center text-3xl font-bold">Unsere Arbeiten</h2>
 
-    <p className="mt-4 text-center text-zinc-400">
-      Einige Beispiele unserer beliebtesten Haarschnitte.
-    </p>
-
-    <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3">
-      <div className="overflow-hidden rounded-2xl">
-        <img
-          src="/cuts/cut1.jpg"
-          alt="Haarschnitt Beispiel 1"
-          className="h-full w-full object-cover transition duration-500 hover:scale-110"
-        />
-      </div>
-
-      <div className="overflow-hidden rounded-2xl">
-        <img
-          src="/cuts/cut2.jpg"
-          alt="Haarschnitt Beispiel 2"
-          className="h-full w-full object-cover transition duration-500 hover:scale-110"
-        />
-      </div>
-
-      <div className="overflow-hidden rounded-2xl">
-        <img
-          src="/cuts/cut3.jpg"
-          alt="Haarschnitt Beispiel 3"
-          className="h-full w-full object-cover transition duration-500 hover:scale-110"
-        />
-      </div>
-
-      <div className="overflow-hidden rounded-2xl">
-        <img
-          src="/cuts/cut4.jpg"
-          alt="Haarschnitt Beispiel 4"
-          className="h-full w-full object-cover transition duration-500 hover:scale-110"
-        />
-      </div>
-
-      <div className="overflow-hidden rounded-2xl">
-        <img
-          src="/cuts/cut5.jpg"
-          alt="Haarschnitt Beispiel 5"
-          className="h-full w-full object-cover transition duration-500 hover:scale-110"
-        />
-      </div>
-
-      <div className="overflow-hidden rounded-2xl">
-        <img
-          src="/cuts/cut6.jpg"
-          alt="Haarschnitt Beispiel 6"
-          className="h-full w-full object-cover transition duration-500 hover:scale-110"
-        />
-      </div>
-    </div>
-  </div>
-</section>
       <section className="px-6 py-16">
         <div className="mx-auto max-w-5xl text-center">
           <h2 className="text-3xl font-bold">Was unsere Kunden sagen</h2>
@@ -134,24 +76,54 @@ export default function Home() {
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             <div className="rounded-2xl border border-zinc-800 p-6 text-left">
               <p className="text-zinc-300">
-                „Sehr professionell, freundlich und präzise. Der Haarschnitt war perfekt.“
+                "Sehr professionell, freundlich und präzise. Der Haarschnitt war
+                perfekt."
               </p>
               <p className="mt-4 text-sm text-zinc-500">Google Bewertung</p>
             </div>
 
             <div className="rounded-2xl border border-zinc-800 p-6 text-left">
               <p className="text-zinc-300">
-                „Saubere Arbeit, faire Preise und eine richtig angenehme Atmosphäre.“
+                "Saubere Arbeit, faire Preise und eine richtig angenehme
+                Atmosphäre."
               </p>
               <p className="mt-4 text-sm text-zinc-500">Google Bewertung</p>
             </div>
 
             <div className="rounded-2xl border border-zinc-800 p-6 text-left">
               <p className="text-zinc-300">
-                „Top Barbershop. Ich komme definitiv wieder.“
+                "Top Barbershop. Ich komme definitiv wieder."
               </p>
               <p className="mt-4 text-sm text-zinc-500">Google Bewertung</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white px-6 py-16 text-black">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl font-bold sm:text-4xl">
+            Bereit für deinen nächsten Besuch?
+          </h2>
+
+          <p className="mt-4 text-lg text-zinc-700">
+            Komm spontan vorbei oder kontaktiere Joker Barbershop direkt.
+          </p>
+
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <a
+              href="/kontakt"
+              className="rounded-2xl bg-black px-6 py-3 font-semibold text-white transition hover:scale-105"
+            >
+              Kontakt
+            </a>
+
+            <a
+              href="tel:034547899228"
+              className="rounded-2xl border border-black px-6 py-3 font-semibold text-black transition hover:bg-black hover:text-white"
+            >
+              Jetzt anrufen
+            </a>
           </div>
         </div>
       </section>
@@ -170,8 +142,8 @@ export default function Home() {
 
           <div>
             <p className="font-semibold text-white">Öffnungszeiten</p>
-            <p className="mt-3 text-sm">Mo – Fr: 09:00 – 20:00</p>
-            <p className="text-sm">Sa: 09:00 – 18:00</p>
+            <p className="mt-3 text-sm">Mo - Fr: 09:00 - 20:00</p>
+            <p className="text-sm">Sa: 09:00 - 18:00</p>
             <p className="text-sm">So: Geschlossen</p>
           </div>
 
@@ -180,9 +152,6 @@ export default function Home() {
             <div className="mt-3 flex flex-col gap-2 text-sm">
               <a href="/leistungen" className="hover:text-white">
                 Leistungen
-              </a>
-              <a href="/termin-buchen" className="hover:text-white">
-                Termin buchen
               </a>
               <a href="/kontakt" className="hover:text-white">
                 Kontakt
@@ -197,33 +166,6 @@ export default function Home() {
         <div className="mt-10 text-center text-sm text-zinc-500">
           © 2026 Joker Barbershop
         </div>
-        <section className="bg-white px-6 py-16 text-black">
-  <div className="mx-auto max-w-4xl text-center">
-    <h2 className="text-3xl font-bold sm:text-4xl">
-      Bereit für deinen nächsten Termin?
-    </h2>
-
-    <p className="mt-4 text-lg text-zinc-700">
-      Komm spontan vorbei oder reserviere deinen Termin online bei Joker Barbershop.
-    </p>
-
-    <div className="mt-8 flex flex-wrap justify-center gap-4">
-      <a
-        href="/termin-buchen"
-        className="rounded-2xl bg-black px-6 py-3 font-semibold text-white transition hover:scale-105"
-      >
-        Termin buchen
-      </a>
-
-      <a
-        href="tel:034547899228"
-        className="rounded-2xl border border-black px-6 py-3 font-semibold text-black transition hover:bg-black hover:text-white"
-      >
-        Jetzt anrufen
-      </a>
-    </div>
-  </div>
-</section>
       </footer>
     </main>
   );

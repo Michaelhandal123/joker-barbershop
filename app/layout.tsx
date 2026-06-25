@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "next/link";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Joker Barbershop Halle – Herrenfriseur",
+  title: "Joker Barbershop Halle - Herrenfriseur",
   description:
     "Joker Barbershop in Halle (Saale). Professionelle Haarschnitte, Fades und Bartpflege zu fairen Preisen.",
 };
@@ -28,7 +28,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="de">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
+        className={`${geistSans.variable} ${geistMono.variable} bg-black antialiased`}
       >
         <nav className="sticky top-0 z-50 border-b border-zinc-800 bg-black/90 backdrop-blur">
           <div className="mx-auto max-w-6xl px-6 py-4 text-white">
@@ -44,32 +44,27 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 <Link href="/leistungen" className="hover:text-white">
                   Leistungen
                 </Link>
-                <Link href="/termin-buchen" className="hover:text-white">
-                  Termin buchen
-                </Link>
                 <Link href="/kontakt" className="hover:text-white">
                   Kontakt
                 </Link>
               </div>
             </div>
 
-            <div className="mt-4 grid grid-cols-2 gap-3 text-sm md:hidden">
-              <Link href="/"
+            <div className="mt-4 grid grid-cols-3 gap-3 text-sm md:hidden">
+              <Link
+                href="/"
                 className="rounded-xl border border-zinc-700 px-4 py-3 text-center text-zinc-200"
               >
                 Startseite
               </Link>
-              <Link href="/leistungen"
+              <Link
+                href="/leistungen"
                 className="rounded-xl border border-zinc-700 px-4 py-3 text-center text-zinc-200"
               >
                 Leistungen
               </Link>
-              <Link href="/termin-buchen"
-                className="rounded-xl border border-zinc-700 px-4 py-3 text-center text-zinc-200"
-              >
-                Termin buchen
-              </Link>
-              <Link href="/kontakt"
+              <Link
+                href="/kontakt"
                 className="rounded-xl border border-zinc-700 px-4 py-3 text-center text-zinc-200"
               >
                 Kontakt
@@ -81,16 +76,18 @@ export default function RootLayout({ children }: RootLayoutProps) {
         {children}
 
         <div className="fixed bottom-6 left-1/2 z-50 flex -translate-x-1/2 gap-4">
-          <Link href="tel:034547899228"
+          <Link
+            href="tel:034547899228"
             className="rounded-full bg-zinc-800 px-5 py-3 text-white shadow-lg"
           >
-            📞 Anrufen
+            Anrufen
           </Link>
 
-            <Link href="/termin-buchen"
+          <Link
+            href="/kontakt"
             className="rounded-full bg-white px-5 py-3 font-semibold text-black shadow-lg"
           >
-            📅 Termin
+            Kontakt
           </Link>
         </div>
       </body>
