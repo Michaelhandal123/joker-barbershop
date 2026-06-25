@@ -24,3 +24,87 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.luxury-logo {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+  color: #f4ddb0;
+}
+
+.luxury-logo::before,
+.luxury-logo::after {
+  content: "";
+  height: 1px;
+  width: clamp(2.5rem, 9vw, 7rem);
+  background: linear-gradient(90deg, transparent, #d6af5e, transparent);
+}
+
+.luxury-logo h1 {
+  max-width: 9ch;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3.25rem, 9vw, 7.75rem);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 0.86;
+  text-transform: uppercase;
+  text-shadow: 0 0 26px rgba(214, 175, 94, 0.24);
+}
+
+.luxury-logo__ornament {
+  color: #d6af5e;
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  text-shadow: 0 0 18px rgba(214, 175, 94, 0.45);
+}
+
+.animate-luxury-rise {
+  animation: luxury-rise 900ms ease-out both;
+}
+
+.animate-luxury-reveal {
+  animation: luxury-reveal 1100ms ease-out 120ms both;
+}
+
+@keyframes luxury-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes luxury-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(22px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 640px) {
+  .luxury-logo {
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+
+  .luxury-logo::before,
+  .luxury-logo::after {
+    width: min(12rem, 58vw);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-luxury-rise,
+  .animate-luxury-reveal {
+    animation: none;
+  }
+}
