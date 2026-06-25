@@ -11,7 +11,8 @@ export default function Impressum() {
             <h2 className="text-xl font-semibold text-white">Angaben gemäß §5 TMG</h2>
 
             <p className="mt-4">
-              Joker Barber Shop<br/>
+              ♛ 𝒥𝑜𝓀𝑒𝓇 ♛<br/>
+              𝐵𝒶𝓇𝒷𝑒𝓇𝓈𝒽𝑜𝓅<br/>
               Rennbahnring 9<br/>
               06124 Halle (Saale)<br/>
               Deutschland

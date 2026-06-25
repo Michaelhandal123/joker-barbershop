@@ -31,7 +31,7 @@ export default function Kontakt() {
         allowFullScreen
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        title="Joker Barbershop Standort"
+        title="♛ 𝒥𝑜𝓀𝑒𝓇 ♛ 𝐵𝒶𝓇𝒷𝑒𝓇𝓈𝒽𝑜𝓅 Standort"
       />
     </div>
   </div>

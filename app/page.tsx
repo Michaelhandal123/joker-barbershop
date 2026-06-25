@@ -14,11 +14,14 @@ export default function Home() {
             </p>
 
             <div className="mt-6 flex justify-center lg:justify-start">
-              <div className="luxury-logo" aria-label="Joker Barbershop">
+              <div
+                className="luxury-logo"
+                aria-label="♛ 𝒥𝑜𝓀𝑒𝓇 ♛ 𝐵𝒶𝓇𝒷𝑒𝓇𝓈𝒽𝑜𝓅"
+              >
                 <h1>
-                  ♛ 𝕵𝖔𝖐𝖊𝖗 ♛
+                  ♛ 𝒥𝑜𝓀𝑒𝓇 ♛
                   <br />
-                  𝕭𝖆𝖗𝖇𝖊𝖗𝖘𝖍𝖔𝖕
+                  𝐵𝒶𝓇𝒷𝑒𝓇𝓈𝒽𝑜𝓅
                 </h1>
               </div>
             </div>
@@ -29,7 +32,7 @@ export default function Home() {
               <div className="luxury-hero-image__frame">
                 <Image
                   src="/images/joker-hero.jpg"
-                  alt="Joker Barbershop Logo"
+                  alt="♛ 𝒥𝑜𝓀𝑒𝓇 ♛ 𝐵𝒶𝓇𝒷𝑒𝓇𝓈𝒽𝑜𝓅 Logo"
                   width={665}
                   height={828}
                   priority
@@ -152,7 +155,8 @@ export default function Home() {
           </h2>
 
           <p className="mt-4 text-lg text-black/75">
-            Komm spontan vorbei oder kontaktiere Joker Barbershop direkt.
+            Komm spontan vorbei oder kontaktiere ♛ 𝒥𝑜𝓀𝑒𝓇 ♛
+            𝐵𝒶𝓇𝒷𝑒𝓇𝓈𝒽𝑜𝓅 direkt.
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -177,7 +181,9 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
           <div>
             <p className="text-lg font-semibold text-[#f4ddb0]">
-              Joker Barbershop
+              ♛ 𝒥𝑜𝓀𝑒𝓇 ♛
+              <br />
+              𝐵𝒶𝓇𝒷𝑒𝓇𝓈𝒽𝑜𝓅
             </p>
             <p className="mt-3 text-sm">
               Rennbahnring 9
@@ -211,7 +217,7 @@ export default function Home() {
         </div>
 
         <div className="mt-10 text-center text-sm text-zinc-500">
-          © 2026 Joker Barbershop
+          © 2026 ♛ 𝒥𝑜𝓀𝑒𝓇 ♛ 𝐵𝒶𝓇𝒷𝑒𝓇𝓈𝒽𝑜𝓅
         </div>
       </footer>
     </main>

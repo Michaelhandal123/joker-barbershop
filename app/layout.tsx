@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Joker Barbershop Halle - Herrenfriseur",
+  title: "♛ 𝒥𝑜𝓀𝑒𝓇 ♛ 𝐵𝒶𝓇𝒷𝑒𝓇𝓈𝒽𝑜𝓅 Halle - Herrenfriseur",
   description:
-    "Joker Barbershop in Halle (Saale). Professionelle Haarschnitte, Fades und Bartpflege zu fairen Preisen.",
+    "♛ 𝒥𝑜𝓀𝑒𝓇 ♛ 𝐵𝒶𝓇𝒷𝑒𝓇𝓈𝒽𝑜𝓅 in Halle (Saale). Professionelle Haarschnitte, Fades und Bartpflege zu fairen Preisen.",
 };
 
 type RootLayoutProps = {
@@ -34,7 +34,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <div className="mx-auto max-w-6xl px-6 py-4 text-white">
             <div className="flex items-center justify-between">
               <Link href="/" className="text-xl font-bold tracking-wide">
-                Joker Barbershop
+                ♛ 𝒥𝑜𝓀𝑒𝓇 ♛
+                <br />
+                𝐵𝒶𝓇𝒷𝑒𝓇𝓈𝒽𝑜𝓅
               </Link>
 
               <div className="hidden gap-6 text-sm text-zinc-300 md:flex">
