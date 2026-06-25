@@ -3,47 +3,46 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen overflow-hidden bg-black text-white">
-      <section className="relative isolate flex min-h-[82vh] items-center px-6 py-12 text-center lg:text-left">
-        <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_24%_38%,rgba(214,175,94,0.2),transparent_28%),radial-gradient(circle_at_78%_20%,rgba(214,175,94,0.12),transparent_30%),linear-gradient(135deg,#030303_0%,#0b0906_52%,#171008_100%)]" />
-        <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(0,0,0,0.64),rgba(0,0,0,0.34),rgba(0,0,0,0.82))]" />
+      <section className="relative isolate px-6 py-12 text-center lg:py-18 lg:text-left">
+        <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_28%_36%,rgba(214,175,94,0.18),transparent_24%),radial-gradient(circle_at_74%_30%,rgba(214,175,94,0.1),transparent_28%),linear-gradient(135deg,#030303_0%,#090806_46%,#151008_100%)]" />
+        <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(0,0,0,0.72),rgba(0,0,0,0.42),rgba(0,0,0,0.82))]" />
 
-        <div className="mx-auto grid w-full max-w-6xl items-center gap-12 lg:grid-cols-[0.82fr_1fr] lg:gap-14">
-          <div className="animate-luxury-reveal order-1">
-            <div className="luxury-hero-image relative mx-auto flex aspect-[0.78] w-full max-w-[390px] items-center justify-center sm:max-w-[430px]">
-              <span className="luxury-hero-image__ring" aria-hidden="true" />
-              <span className="luxury-hero-image__flourish luxury-hero-image__flourish--top" aria-hidden="true" />
-              <span className="luxury-hero-image__flourish luxury-hero-image__flourish--bottom" aria-hidden="true" />
-              <div className="luxury-hero-image__frame relative h-full w-full overflow-hidden rounded-[50%] border border-[#d6af5e]/75 bg-[#090806] shadow-[0_28px_90px_rgba(0,0,0,0.62)]">
-                <Image
-                  src="/images/joker-hero.jpg"
-                  alt="Joker Barbershop Logo"
-                  fill
-                  priority
-                  sizes="(max-width: 768px) 78vw, (max-width: 1200px) 34vw, 430px"
-                  className="object-cover object-center contrast-110 transition duration-700 hover:scale-[1.035]"
-                />
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_38%,transparent_42%,rgba(0,0,0,0.28)_100%),linear-gradient(180deg,rgba(0,0,0,0.02),rgba(0,0,0,0.2))]" />
-              </div>
-            </div>
-          </div>
-
-          <div className="animate-luxury-rise order-2">
-            <p className="text-xs font-semibold uppercase tracking-[0.45em] text-[#d6af5e] lg:ml-1">
+        <div className="hero-shell mx-auto grid w-full max-w-6xl items-center gap-x-14 gap-y-8">
+          <div className="hero-brand animate-luxury-rise">
+            <p className="text-xs font-semibold uppercase tracking-[0.42em] text-[#d6af5e] lg:ml-1">
               Premium Barber Experience
             </p>
 
-            <div className="mt-8 flex justify-center lg:justify-start">
+            <div className="mt-6 flex justify-center lg:justify-start">
               <div className="luxury-logo" aria-label="Joker Barbershop">
                 <h1>Joker Barbershop</h1>
               </div>
             </div>
+          </div>
 
-            <p className="mx-auto mt-9 max-w-xl text-base leading-8 text-zinc-300 sm:text-xl lg:mx-0">
+          <div className="hero-image animate-luxury-reveal">
+            <div className="luxury-hero-image mx-auto flex w-full max-w-[320px] items-center justify-center lg:max-w-[460px]">
+              <div className="luxury-hero-image__frame">
+                <Image
+                  src="/images/joker-hero.jpg"
+                  alt="Joker Barbershop Logo"
+                  width={665}
+                  height={828}
+                  priority
+                  sizes="(max-width: 768px) 320px, 460px"
+                  className="h-auto w-full object-contain"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="hero-copy animate-luxury-rise">
+            <p className="mx-auto max-w-xl text-base leading-8 text-zinc-300 sm:text-xl lg:mx-0">
               Präzise Haarschnitte, saubere Fades und professionelle Bartpflege
               in moderner und freundlicher Atmosphäre.
             </p>
 
-            <div className="mt-11 flex flex-wrap justify-center gap-4 lg:justify-start">
+            <div className="mt-9 flex flex-wrap justify-center gap-4 lg:justify-start">
               <a
                 href="/kontakt"
                 className="rounded-full bg-[#d6af5e] px-7 py-3 text-sm font-bold uppercase tracking-[0.2em] text-black shadow-[0_0_28px_rgba(214,175,94,0.22)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#f0d28a]"
@@ -52,10 +51,10 @@ export default function Home() {
               </a>
 
               <a
-                href="/leistungen"
+                href="tel:034547899228"
                 className="rounded-full border border-[#d6af5e]/70 px-7 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#f4ddb0] transition duration-300 hover:-translate-y-0.5 hover:border-[#f0d28a] hover:bg-[#d6af5e]/10"
               >
-                Unsere Services
+                Anrufen
               </a>
             </div>
           </div>

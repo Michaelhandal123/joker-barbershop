@@ -74,22 +74,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
         </nav>
 
         {children}
-
-        <div className="fixed bottom-6 left-1/2 z-50 flex -translate-x-1/2 gap-4">
-          <Link
-            href="tel:034547899228"
-            className="rounded-full bg-zinc-800 px-5 py-3 text-white shadow-lg"
-          >
-            Anrufen
-          </Link>
-
-          <Link
-            href="/kontakt"
-            className="rounded-full bg-white px-5 py-3 font-semibold text-black shadow-lg"
-          >
-            Kontakt
-          </Link>
-        </div>
       </body>
     </html>
   );
