@@ -177,6 +177,100 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="premium-experience-section relative isolate overflow-hidden border-t border-[#d6af5e]/15 bg-black px-6 py-20 text-white sm:py-24">
+        <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_20%_20%,rgba(214,175,94,0.16),transparent_28%),radial-gradient(circle_at_82%_74%,rgba(214,175,94,0.1),transparent_30%),linear-gradient(145deg,#030303_0%,#090806_48%,#120d07_100%)]" />
+        <div className="absolute inset-x-6 top-0 -z-10 mx-auto h-px max-w-6xl bg-gradient-to-r from-transparent via-[#d6af5e]/60 to-transparent" />
+
+        <div className="mx-auto max-w-6xl">
+          <div className="premium-section-header mx-auto max-w-4xl text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.42em] text-[#d6af5e]">
+              Luxury Craft Since 1998
+            </p>
+            <h2 className="mt-5 font-serif text-4xl font-bold leading-tight text-[#f4ddb0] sm:text-5xl">
+              Joker Barbershop – Premium Barber Experience auf höchstem Niveau
+            </h2>
+            <div className="mx-auto mt-6 h-px w-40 bg-gradient-to-r from-transparent via-[#d6af5e] to-transparent" />
+            <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-zinc-300">
+              Im Joker Barbershop wird jeder Besuch zu einer gepflegten und
+              professionellen Barber-Experience.
+            </p>
+            <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-zinc-400 sm:text-lg">
+              Seit 1998 stehen wir für präzise Schnitte, höchste Sauberkeit und
+              echte Handwerkskunst — und das ohne Terminvereinbarung. Komm
+              einfach vorbei und wir kümmern uns um den Rest.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
+            <article className="premium-feature-card rounded-3xl border border-[#d6af5e]/20 bg-black/55 p-7 shadow-[0_24px_80px_rgba(0,0,0,0.42)] sm:p-9">
+              <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
+                <div className="premium-icon flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-[#d6af5e]/45 bg-[#d6af5e]/10 text-2xl">
+                  ⭐
+                </div>
+                <h3 className="font-serif text-3xl font-semibold text-[#f4ddb0]">
+                  Warum entscheiden sich Kunden für uns?
+                </h3>
+              </div>
+
+              <ul className="mt-8 grid gap-4 text-left text-zinc-300">
+                <li className="premium-list-item">
+                  Erfahrung seit 1998 in modernen Haarschnitten und präzisen
+                  Fades
+                </li>
+                <li className="premium-list-item">
+                  Außergewöhnliche Sauberkeit bei Werkzeugen, Arbeitsplätzen
+                  und im gesamten Salon
+                </li>
+                <li className="premium-list-item">
+                  Höchste Präzision in jedem Detail
+                </li>
+                <li className="premium-list-item">
+                  Professionelle Produkte für Haar- und Bartpflege
+                </li>
+                <li className="premium-list-item">
+                  Angenehme Atmosphäre und respektvoller Service auf
+                  Premium-Niveau
+                </li>
+              </ul>
+            </article>
+
+            <div className="grid gap-6">
+              <article className="premium-feature-card rounded-3xl border border-[#d6af5e]/20 bg-[#080806]/85 p-7 shadow-[0_24px_80px_rgba(0,0,0,0.34)] sm:p-8">
+                <div className="flex items-center gap-4">
+                  <div className="premium-icon flex h-13 w-13 shrink-0 items-center justify-center rounded-full border border-[#d6af5e]/45 bg-[#d6af5e]/10 text-2xl">
+                    💈
+                  </div>
+                  <h3 className="font-serif text-2xl font-semibold text-[#f4ddb0]">
+                    Professionelle Haar- & Bartpflege
+                  </h3>
+                </div>
+                <p className="mt-6 leading-8 text-zinc-300">
+                  Wir arbeiten mit desinfizierten Werkzeugen und modernen
+                  Techniken, um dir einen sauberen, gepflegten und perfekt
+                  abgestimmten Look zu garantieren — egal ob Haarschnitt oder
+                  Bartstyling.
+                </p>
+              </article>
+
+              <article className="premium-feature-card rounded-3xl border border-[#d6af5e]/20 bg-[#080806]/85 p-7 shadow-[0_24px_80px_rgba(0,0,0,0.34)] sm:p-8">
+                <div className="flex items-center gap-4">
+                  <div className="premium-icon flex h-13 w-13 shrink-0 items-center justify-center rounded-full border border-[#d6af5e]/45 bg-[#d6af5e]/10 text-2xl">
+                    📍
+                  </div>
+                  <h3 className="font-serif text-2xl font-semibold text-[#f4ddb0]">
+                    Bereit für ein neues Barber-Erlebnis?
+                  </h3>
+                </div>
+                <p className="mt-6 leading-8 text-zinc-300">
+                  Besuche den Joker Barbershop und genieße Qualität, Sauberkeit
+                  und echte Expertise — und das alles ohne Termin.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer className="border-t border-[#d6af5e]/15 bg-black px-6 py-10 text-zinc-400">
         <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
           <div>
